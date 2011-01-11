@@ -6,12 +6,9 @@
 
 <struts>
 	<package name="myPackage" extends="struts-default">
-		<action name="index" class="postvalidations.IndexAction">
-			<result>/jsp/index.jsp</result>
-		</action>
-		<action name="helloWorld" class="helloWorldAction"> 
-			<result name="input">/jsp/index.jsp</result>
-			<result>/jsp/helloWorld.jsp</result>
+		<action name="clientSide" class="postvalidations.ClientSideAction">
+			<result name="input">/jsp/clientSide.jsp</result>
+			<result>/jsp/clientSide-scs.jsp</result>
 		</action>
 	</package>
 </struts>
